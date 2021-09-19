@@ -4,7 +4,15 @@
       <span>What's your opinion on</span>
       <h1 class="main-card-title">{{ popeData.name }} ?</h1>
       <p class="main-card-description">{{ popeData.description }}</p>
-      <span>More information</span>
+      <a
+        class="more-info"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Pope_Francis"
+        ><span>
+          <img src="../../assets/img/wikipedia.svg" alt="" /> More
+          information</span
+        ></a
+      >
       <h5>What's Your Veredict?</h5>
     </div>
     <div class="d-flex vote-bar-container">
@@ -76,6 +84,13 @@ export default {
 .img-custom {
   width: 2.5rem;
   margin: 1rem;
+}
+.more-info {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 100;
 }
 .main-card-description {
   font-size: 1.3rem;
