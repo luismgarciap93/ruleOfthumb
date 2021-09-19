@@ -1,5 +1,5 @@
 # rule-of-thumb
-
+Application created in response to Zemoga UI test
 ## Project setup
 ```
 npm install
