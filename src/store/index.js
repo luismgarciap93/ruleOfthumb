@@ -5,11 +5,18 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    showList: false,
   },
   mutations: {
+    changeList(state) {
+      state.showList = !state.showList
+      console.log(state.showList);
+    }
   },
-  actions: {
-  },
-  modules: {
+  getters: {
+    showListState(state) {
+      return state.showList
+    }
   }
+
 })
