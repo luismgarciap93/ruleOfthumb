@@ -18,7 +18,7 @@
       <bannerInfo class="banner-box" @removeBanner="removeBanner"></bannerInfo>
     </div>
     <div class="title-frame mt-3">
-      <span class="h1">Previous Rulings</span>
+      <span class="h1 previus-tittle">Previous Rulings</span>
       <button class="toggle-btn" @click="toggleListGrid">
         {{ toggleText }}
       </button>
@@ -214,6 +214,9 @@ export default {
   }
   .toggle-btn {
     display: none;
+  }
+  .previus-tittle {
+    margin: auto;
   }
 }
 </style>
